@@ -1,29 +1,126 @@
-body{
-    font-family: 'Asap', sans-serif;
-    background-color: #999;
+:root{
+    --corange: #ffa500;
 }
 
+body{
+    font-family: 'Asap', sans-serif;
+    background-color: #ccc;
+}
 
 .container {
-    margin:1rem;
-    border:solid 1px #000;
+    margin:.1rem;
+    border:solid 2px #bbb;
     background-color: #fff;
 }
 
 .header {
-    font-size: 3rem;
     font-weight: bold;
     text-align: center;
-    padding:2rem 0 2rem;
+    padding:2rem 0 1rem;
 }
 
 .header__img {
-    width:30%;
+    width:50%;
 }
+
+.header__title {
+    font-size: 2.5em;
+    padding: .5rem 0 .5rem;
+}
+
 .header__title__detail {
     background-color: #000;
     color:#fff;
     font-size: 0.5em;
-    padding:0.5rem 0.8rem;
+    padding:.4rem .8rem;
     letter-spacing: .3em;
+}
+
+.navigation {
+    text-align: center;
+    padding:.8rem 0 .8rem;
+    border-top: 2px red solid;
+    border-bottom: 2px red solid;
+    position: sticky;
+    top:-2px; 
+    background-color: #fff;
+    margin:0 0 1rem;
+}
+
+.navigation__form {
+    padding:0 0 .5rem;
+}
+
+.navigation__form__search{
+    border-radius: 10px;
+}
+
+.nav__list__item {
+    padding: 0 .4rem 0;
+    background-color: var(--corange);
+    border:solid 2px black;
+    border-radius: 10px;
+    transition: 500ms;
+}
+
+.nav__list__item:hover {
+    background-color: black;
+}
+
+.header__return-button{
+    font-size: .6rem;
+    background-color: var(--corange);
+    color:white;
+    border: solid 2px #000;
+    padding:.5rem;
+    position:fixed;
+    top:.2rem;
+    right:.2rem;
+    width:20%;
+    text-align: center;
+    z-index: 9999;
+}
+
+.header__return-button:hover{
+    background-color: black;
+    transition: 500ms;
+}
+
+.summary__list {
+    list-style: upper-roman;
+    list-style-position: inside;
+}
+
+.main{
+    padding: 0 .5rem;
+}
+
+.main h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top:1rem;
+    margin-bottom: .5rem;
+}
+
+.summary__list{
+    text-indent: 10%;
+    line-height: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.summary__blockquote p{
+    background-color: #ccc;
+    padding:.6rem;
+    font-style: italic;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    margin:0 1rem 0;
+    border-radius: 5px
+}
+
+.summary__blockquote footer{
+    padding:.6rem;
+    font-size: 0.7rem;
+    text-align: end;
 }
