@@ -20,7 +20,7 @@ body{
 }
 
 .header__img {
-    width:65%;
+    max-width:60%;
 }
 
 .header__title {
@@ -174,14 +174,14 @@ body{
     font-size: 1.2em;
     border: solid 3px var(--corange);
     border-radius:20px;
-    padding:.4rem .8rem .4rem;
+    padding:.2rem .8rem .2rem;
 }
 
 .card__btn:hover {
     font-size: 1.2em;
     border: solid 3px var(--corange);
     border-radius:20px;
-    padding:.4rem .8rem .4rem;
+    padding:.2rem .8rem .2rem;
     background-color: var(--corange);
     color: #fff;
 }
@@ -192,7 +192,10 @@ body{
 }
 
 .pancakes__img {
-    width:60%;
+    max-width:50%;
+    margin-bottom: 1rem;
+    border:solid 2px #000;
+    border-radius: 25%;
 }
 
 .quepassa{
