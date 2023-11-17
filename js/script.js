@@ -9,7 +9,7 @@ function play() {
         return game.searchedNumber;
     }
     const finalNumber = randomize(10, 20)
-    let enteredNumber = parseInt(prompt("Quel est le juste prix (entre 10 et 20"))
+    let enteredNumber = parseInt(prompt("Quel est le juste prix (entre 10 et 20)"))
     console.log(typeof (enteredNumber))
     console.log(game.searchedNumber)
     console.log(game.attempts)
