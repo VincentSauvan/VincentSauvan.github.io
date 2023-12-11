@@ -1,0 +1,19 @@
+<!-- j'inclus le fichier header.ejs -->
+<%- include('./partials/header') %>
+
+<% for(const movie of movies){ %>
+    <article>
+        <header>
+            <a href="films/<%= movie.id %>">
+                <img class="card-img pure-img" src="<%= movie.image_src %>" alt="<%= movie.title %>">
+            </a>
+          <h2><%= movie.title %></h2>
+          <div class="card-meta">
+            Par <a href="#"><%= movie.director %></a> 
+          </div>
+        </header>
+      </article>
+    <% } %>
+
+    <!-- j'inclus le fichier footer.ejs -->
+<%- include('./partials/footer') %>

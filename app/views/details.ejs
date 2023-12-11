@@ -1,0 +1,22 @@
+<!-- j'inclus le fichier header.ejs -->
+<%- include('./partials/header') %>
+
+<% for(const movie of movies){ %>
+    <% if (movie.id == id){ %>
+    <article>
+        <header>
+            <img class="card-img pure-img" src="<%= movie.image_src %>" alt="<%= movie.title %>">
+          <h2><%= movie.title %></h2>
+          <h3><%= movie.original_title %></h3>
+          <p><%= movie.description %></p>
+          <p>Par <a href="#"><%= movie.director %></a></p>
+          <p>Sortie en <a href="#"><%= movie.release_date %></a></p>
+          <p>durée : <%= movie.duration %> minutes</p>
+     
+        </header>
+      </article>
+    <% } %>
+    <% } %>
+
+    <!-- j'inclus le fichier footer.ejs -->
+<%- include('./partials/footer') %>
