@@ -26,9 +26,9 @@ const router = require("./app/router");
 server.use(router);
 
 // PORT d'écoute
-const PORT = 3000;
+const PORT = process.env.GITHUB_PAGES ? process.env.PORT || 80 : 3000;
 
 // Mise sur écoute sur le port 
-server.listen(PORT,()=>{
+server.listen(PORT, () => {
     console.log(`Serveur lancé sur http://localhost:${PORT}`);
 });
